@@ -1,0 +1,25 @@
+# docker-compose.yml — Neo4j + servicios de mala-pata-memory
+# TODO: definir servicio Neo4j 5.x community con:
+#   - puertos 7474 (browser) y 7687 (bolt)
+#   - volume persistente para /data
+#   - env vars NEO4J_AUTH (leer de .env)
+#   - healthcheck via cypher-shell
+# TODO: opcional — agregar servicio del MCP server como container si querés todo dockerizado
+
+version: '3.8'
+
+services: {}
+# services:
+#   neo4j:
+#     image: neo4j:5-community
+#     container_name: mala-pata-memory-neo4j
+#     ports:
+#       - "7474:7474"
+#       - "7687:7687"
+#     environment:
+#       NEO4J_AUTH: ${NEO4J_USER}/${NEO4J_PASSWORD}
+#     volumes:
+#       - mala-pata-memory-neo4j-data:/data
+#
+# volumes:
+#   mala-pata-memory-neo4j-data:
